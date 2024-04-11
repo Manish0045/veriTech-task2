@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-    overflow-x: hidden;
 }
 
 html {
@@ -15,23 +14,22 @@ html {
 }
 
 nav {
+    display: flex;
     background-color: rgba(245, 245, 115, 0.1);
     color: #fff;
-    padding: 10px 20px;
     position: fixed;
+    gap: 2rem;
     top: 0;
-    right: 0;
-    left: 0;
+    right: 30px;
     backdrop-filter: blur(10px);
     z-index: 1;
     text-align: center;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
 }
 
 nav ul li {
@@ -49,7 +47,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
-    padding: 10px 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -160,7 +157,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 10px;
-    width: 100%;
+    /* width: 100%; */
+    margin-top: 5px;
     bottom: 0;
     position: relative;
 }
