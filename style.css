@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    background-color: rgba(245, 245, 115, 0.1);
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+header {
+    background-color: rgba(247, 175, 8, 0.842);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-info {
+    padding: 80px;
+    text-align: center;
+    height: 90vh;
+    background-color: rgba(215, 210, 210, 0.544);
+    /* overflow-x: auto; */
+
+}
+
+.course-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.course-topic {
+    background-color: rgba(244, 239, 239, 0.5);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-topic:hover {
+    transform: rotate(5deg);
+}
+
+.course-topic i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.course-topic p {
+    color: #333;
+    font-size: 18px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    /* margin-top: 25px; */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+
+#contact {
+    background-color: rgba(215, 210, 210, 0.544);
+    text-align: center;
+    padding: 60px 20px;
+    min-height: calc(50vh - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
