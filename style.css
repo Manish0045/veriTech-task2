@@ -72,7 +72,6 @@ header {
 .course-info {
     padding: 80px;
     text-align: center;
-    height: 90vh;
     background-color: rgba(215, 210, 210, 0.544);
     /* overflow-x: auto; */
 
@@ -90,6 +89,7 @@ header {
 .course-topic {
     background-color: rgba(244, 239, 239, 0.5);
     padding: 50px;
+    height: 120px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -103,7 +103,7 @@ header {
 .course-topic i {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #918a06;
 }
 
 .course-topic p {
@@ -125,19 +125,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-footer {
-    background-color: #333;
-    /* margin-top: 25px; */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    bottom: 0;
-    position: relative;
-    padding-bottom: 60px;
-}
-
 
 #contact {
     background-color: rgba(215, 210, 210, 0.544);
@@ -164,4 +151,16 @@ footer {
 
 #contact button:hover {
     background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    /* margin-top: 25px; */
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
 }
